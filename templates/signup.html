@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+<h1>Welcome in Signup From!</h1>
+
+ <form action="/signup" method="POST">
+  {% csrf_token %}
+     <label for=>Username</label>
+     <input type="text" id="Username" name="Username" placeholder="Create a Username" required>
+     <td>
+         <a href="#">Edit</a>
+         <a href="#">Delete</a>
+     </td>
+     <br>
+     <label for=>Email</label>
+     <input type="text" id="Email" name="Email" placeholder="Create a Email" required>
+     <td>
+         <a href="#">Edit</a>
+         <a href="#">Delete</a>
+     </td>
+     <br>
+     <label for=>Password</label>
+     <input type="Password" id="Pass1" name="Pass1" placeholder="Create a Password" required>
+     <td>
+         <a href="#">Edit</a>
+         <a href="#">Delete</a>
+     </td>
+     <br>
+     <label for=>Confirm Password</label>
+     <input type="Password" id="Pass2" name="Pass2" placeholder="Confirm Password" required>
+     <td>
+         <a href="#">Edit</a>
+         <a href="#">Delete</a>
+     </td>
+     <br>
+     <label for=>Address</label>
+     <input type="Address" id="Address" name="Address" placeholder="Enter Address" required>
+     <td>
+         <a href="#">Edit</a>
+         <a href="#">Delete</a>
+     </td>
+
+     <br>
+     <button type="Submit">Sign up</button>
+     <button type="Submit">Logout</button>
+
+ </form>
+</body>
+</html>
+</head>
+</body>
